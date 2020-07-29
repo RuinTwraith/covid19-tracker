@@ -1,0 +1,25 @@
+
+.table{
+    margin-top: 20px;
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    height: 400px;
+    color: var(--table-text-color);
+}
+
+.table tr{
+    display: flex;    
+    justify-content: space-between;
+    background-color: var(--table-row-even);
+    transition: var(--transition_time) !important;
+}
+
+.table td{
+    padding: 0.5rem 1rem;
+}
+
+.table tr:nth-of-type(odd) {
+    background-color: var(--table-row-odd);
+    transition: var(--transition_time) !important;
+}
+

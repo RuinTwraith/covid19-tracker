@@ -1,0 +1,62 @@
+
+.map {
+  height: 500px;
+  background-color: var(--infoBox-color) !important;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px var(--card-shadow) !important;  
+  transition: var(--transition_time) !important;
+}
+
+.map .leaflet-container{
+  height: 100%;
+  border-radius: 10px;
+}
+
+.leaflet-popup-content-wrapper{
+  background: var(--infoBox-color) !important;
+  transition: var(--transition_time) !important;
+}
+
+.info-container {
+  width: 10em;
+  .info-flag{
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px -2px var(--card-shadow) !important;
+    
+    img{
+      width: 100px;
+      border-radius: 5px;
+    }
+  } 
+
+  .info-name {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--infoBox-text-color) !important;
+  }
+  
+  .info-confirmed,
+  .info-recovered,
+  .info-deaths {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: var(--infoBox-total-color) !important;
+  }
+  
+}
+
+
+@media(max-width: 600px) {
+  .map{
+    height: 15rem;
+  }
+}
+
+
+

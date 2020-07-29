@@ -1,0 +1,40 @@
+
+.infoBox {
+  flex: 1;
+  transition: background-color 700ms ease-out !important;
+  background-color: var(--infoBox-color) !important;
+  cursor: pointer;
+  color: var(--infoBox-text-color)!important;
+}
+
+.infoBox__title {
+  color: var(--infoBox-title-color) !important;
+}
+
+.infoBox--selected {
+  border-bottom: 10px solid var(--border-color);
+}
+
+.infoBox__total {
+  color: var(--infoBox-total-color) !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  margin-top: 15px !important;
+}
+
+@media(max-width: 600px) {
+  .infoBox{
+    height: 5rem;
+    font-size: 0.8rem !important;
+  }
+
+  .infoBox__container{
+    position: relative;
+  }
+  .infoBox__total{
+    font-size: 0.8rem !important;
+    position: absolute;
+    right: 1em;
+    bottom: 1.5em;
+  }
+}
