@@ -1,6 +1,6 @@
 Visit this website at https://covid-19-ruin.web.app/
 
-##This is a react app which tracks covid-19 pandemic cases all around the world.
+## This is a react app which tracks covid-19 pandemic cases all around the world.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
